@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #130f23;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-accent {
+  color: #b2a8e1;
+}
+
+.spacer {
+  margin: 2rem 0;
+  height: 10px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #130f23;
+  z-index: 99999;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% auto;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    width: 90%;
+  }
+}
+
+header nav .logo {
+  width: 50px;
+}
+
+header nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav .nav-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+header nav .nav-links li {
+  display: inline-block;
+}
+
+header nav .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav .nav-links li a:hover {
+  color: #b2a8e1;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links .hide-mobile {
+    display: none !important;
+  }
+}
+
+header nav .nav-links .resume {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-appearance: none;
+  background-color: #41308d;
+  font-weight: 600;
+  height: 2.5rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1.2;
+  min-width: 2.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  outline: none;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+}
+
+main {
+  margin-top: 15rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 12rem;
+  }
+}
+
+main .container {
+  color: #ffffff;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+@media (max-width: 768px) {
+  main .container {
+    width: 90%;
+  }
+}
+
+main .container .introduction h2,
+main .container .introduction p {
+  margin: 2.5rem 0;
+}
+
+main .container .introduction h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  main .container .introduction h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .introduction--details {
+  color: #a0aec0;
+  width: 50%;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  main .container .introduction--details {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  main .container .introduction--details {
+    width: 100%;
+  }
+}
+
+main .container .introduction--button {
+  color: #b2a8e1;
+  text-decoration: none;
+  border: 2px solid #b2a8e1;
+  -webkit-box-align: center;
+  -webkit-appearance: none;
+  font-weight: 600;
+  height: 3rem;
+  -webkit-box-pack: center;
+  line-height: 1.2;
+  min-width: 2.5rem;
+  padding: 1.5rem 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  outline: none;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+}
+
+main .container .introduction--button:hover {
+  background: #b2a8e1;
+  color: #ffffff;
+}
+
+main .container .about {
+  margin: 20rem 0;
+}
+
+main .container .about__header {
+  margin: 4rem 0;
+}
+
+main .container .about__header h2 {
+  font-size: 3rem;
+}
+
+main .container .about__header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .about__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .about__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  main .container .about__content {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .about__content p {
+  margin: 2.5rem 0;
+  color: #a0aec0;
+  line-height: 2;
+}
+
+main .container .about__content .technologies {
+  color: #a0aec0;
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+main .container .about__content .technologies ul li {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  main .container .about__content .technologies {
+    width: 70%;
+  }
+}
+
+main .container .about__content .avatar {
+  padding: 0 4rem;
+}
+
+@media (max-width: 768px) {
+  main .container .about__content .avatar {
+    padding: 0;
+  }
+}
+
+main .container .about__content .avatar img {
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  border-radius: 0.25rem;
+}
+
+main .container .projects {
+  margin: 20rem 0;
+}
+
+main .container .projects__header {
+  margin: 4rem 0;
+}
+
+main .container .projects__header h2 {
+  font-size: 3rem;
+}
+
+main .container .projects__header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .projects__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .projects .all-projects > div {
+  margin: 2rem 0;
+}
+
+main .container .projects__card {
+  width: 100%;
+  height: auto;
+  background: #252047;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  padding: 3.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 768px) {
+  main .container .projects__card {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .projects__card:hover {
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+main .container .projects__card--content--header, main .container .projects__card--content--about, main .container .projects__card--content--tech, main .container .projects__card--content--links {
+  margin: 1.5rem 0;
+}
+
+main .container .projects__card--content--header {
+  font-size: 1.8rem;
+}
+
+main .container .projects__card--content--about {
+  color: #a0aec0;
+  line-height: 2;
+}
+
+main .container .projects__card--content--tech {
+  font-weight: bold;
+}
+
+main .container .projects__card--content--tech span {
+  margin-right: 2rem;
+}
+
+main .container .projects__card--content--links a {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+
+main .container .projects__card--content--links a:hover {
+  color: #b2a8e1;
+}
+
+main .container .contact {
+  margin: 20rem 0;
+}
+
+main .container .contact__header {
+  margin: 4rem 0;
+}
+
+main .container .contact__header h2 {
+  font-size: 3rem;
+}
+
+main .container .contact__header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .contact__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__details {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .contact__details .mail-link {
+  color: #a0aec0;
+}
+
+main .container .contact__details .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__details .social-links {
+    margin: auto;
+    margin-top: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+}
+
+main .container .contact__details .social-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
