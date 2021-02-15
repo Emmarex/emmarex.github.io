@@ -8,6 +8,7 @@ $grey: #a0aec0;
 // Font Import
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -29,27 +30,33 @@ body {
 .text-accent {
   color: $primary-40;
 }
+
 .spacer {
   margin: 2rem 0;
   height: 10px;
 }
+
 header {
   width: 100%;
   position: fixed;
   top: 0;
   background: $background-primary;
   z-index: 99999;
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2% auto;
     width: 80%;
+
     @media (max-width: 768px) {
       width: 90%;
     }
+
     .logo {
       width: 50px;
+
       img {
         max-width: 100%;
         height: auto;
@@ -63,11 +70,14 @@ header {
       align-items: center;
       list-style: none;
       font-weight: 300;
+
       @media (max-width: 768px) {
         justify-content: flex-end;
       }
+
       li {
         display: inline-block;
+
         a {
           color: $white;
           text-decoration: none;
@@ -130,6 +140,7 @@ main {
     //   Introduction
 
     .introduction {
+
       h2,
       p {
         margin: 2.5rem 0;
@@ -189,11 +200,14 @@ main {
 
       &__header {
         margin: 4rem 0;
+
         h2 {
           font-size: 3rem;
+
           span {
             font-family: "Fira Code", monospace;
           }
+
           @media (max-width: 768px) {
             font-size: 2.5rem;
           }
@@ -208,11 +222,13 @@ main {
         @media (max-width: 900px) {
           grid-template-columns: 100%;
         }
+
         p {
           margin: 2.5rem 0;
           color: $grey;
           line-height: 2;
         }
+
         .technologies {
           color: $grey;
           margin-left: 1.5rem;
@@ -237,6 +253,7 @@ main {
           @media (max-width: 768px) {
             padding: 0;
           }
+
           img {
             max-width: 100%;
             height: auto;
@@ -252,17 +269,21 @@ main {
 
       &__header {
         margin: 4rem 0;
+
         h2 {
           font-size: 3rem;
+
           span {
             font-family: "Fira Code", monospace;
           }
+
           @media (max-width: 768px) {
             font-size: 2.5rem;
           }
         }
       }
-      .all-projects > div {
+
+      .all-projects>div {
         margin: 2rem 0;
       }
 
@@ -286,6 +307,7 @@ main {
         }
 
         &--content {
+
           &--header,
           &--about,
           &--tech,
@@ -296,6 +318,7 @@ main {
           &--header {
             font-size: 1.8rem;
           }
+
           &--about {
             color: $grey;
             line-height: 2;
@@ -303,6 +326,7 @@ main {
 
           &--tech {
             font-weight: bold;
+
             span {
               margin-right: 2rem;
             }
@@ -329,11 +353,14 @@ main {
 
       &__header {
         margin: 4rem 0;
+
         h2 {
           font-size: 3rem;
+
           span {
             font-family: "Fira Code", monospace;
           }
+
           @media (max-width: 768px) {
             font-size: 2.5rem;
           }
@@ -341,34 +368,36 @@ main {
       }
 
       &__details {
-          display: grid;
-          grid-template-columns: 50% 50%;
-          align-items: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 100%;
+        }
+
+        .mail-link {
+          color: $grey;
+        }
+
+        .social-links {
+
+          display: flex;
+          justify-content: space-evenly;
 
           @media (max-width: 768px) {
-            grid-template-columns: 100%;
+            margin: auto;
+            margin-top: 100px;
+            justify-content: space-between;
+            width: 80%;
           }
 
-          .mail-link {
-              color: $grey;
+          a {
+            text-decoration: none;
+            color: $white;
+            font-size: 4rem;
           }
-          .social-links {
-
-            display: flex;
-            justify-content: space-evenly;
-
-            @media (max-width: 768px) {
-                margin: auto;
-                margin-top: 100px;
-                justify-content: space-between;
-                width: 80%;
-              }
-              a {
-                  text-decoration: none;
-                  color: $white;
-                  font-size: 4rem;
-              }
-          }
+        }
       }
     }
   }
