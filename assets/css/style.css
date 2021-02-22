@@ -182,7 +182,7 @@ main .container .introduction--details {
   font-size: 2.5rem;
 }
 
-main .container .introduction--details sup{
+main .container .introduction--details sup {
   color: red;
   font-size: 1.5rem;
 }
@@ -271,6 +271,10 @@ main .container .about__content p {
   margin: 2.5rem 0;
   color: #a0aec0;
   line-height: 2;
+}
+
+.about__content .details a {
+  color: #ffffff;
 }
 
 main .container .about__content .technologies {
@@ -470,7 +474,7 @@ main .container .contact__details .social-links a {
   font-size: 4rem;
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,11 +485,11 @@ footer{
 footer a,
 footer a:hover,
 footer a:focus,
-footer a:active{
+footer a:active {
   color: #ffffff;
 }
 
-.intro--exp li{
+.intro--exp li {
   line-height: 2;
   color: #a0aec0;
   margin-left: 13px;
@@ -493,11 +497,11 @@ footer a:active{
 
 .intro--exp li a,
 .intro--exp li a:focus,
-.intro--exp li a:hover{
-  color: #a0aec0;
+.intro--exp li a:hover {
+  color: #ffffff;
 }
 
-.intro--social a{
+.intro--social a {
   text-decoration: none;
   color: #ffffff;
   font-size: 4rem;
