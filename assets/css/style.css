@@ -179,6 +179,12 @@ main .container .introduction--details {
   color: #a0aec0;
   width: 50%;
   line-height: 2;
+  font-size: 2.5rem;
+}
+
+main .container .introduction--details sup{
+  color: red;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 900px) {
@@ -309,6 +315,17 @@ main .container .about__content .avatar img {
 
 main .container .projects {
   margin: 20rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 768px) {
+  main .container .projects {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
 }
 
 main .container .projects__header {
@@ -329,28 +346,18 @@ main .container .projects__header h2 span {
   }
 }
 
-main .container .projects .all-projects>div {
-  margin: 2rem 0;
+main .container .projects .recent-projects>div,
+main .container .projects .failed-projects>div {
+  margin: 2rem 1rem;
 }
 
 main .container .projects__card {
   width: 100%;
-  height: auto;
+  height: 300px;
   background: #252047;
   border-radius: 0.4rem;
   cursor: pointer;
   padding: 3.2rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-  grid-template-columns: 50% 50%;
-}
-
-@media (max-width: 768px) {
-  main .container .projects__card {
-    -ms-grid-columns: 100%;
-    grid-template-columns: 100%;
-  }
 }
 
 main .container .projects__card:hover {
@@ -477,6 +484,26 @@ footer a:focus,
 footer a:active{
   color: #ffffff;
   text-decoration: none;
+}
+
+.intro--exp li{
+  line-height: 2;
+  color: #a0aec0;
+  margin-left: 13px;
+}
+
+.intro--exp li a,
+.intro--exp li a:focus,
+.intro--exp li a:hover{
+  color: #a0aec0;
+}
+
+.intro--social a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4rem;
+  margin: 10px 30px 5px 0px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

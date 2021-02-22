@@ -35,12 +35,50 @@
         <!-- Main Content -->
         <div class="container">
             <div class="introduction">
-                <p class="text-accent">Hello, my name is</p>
+                <p class="text-accent">Hello 👋 , my name is</p>
                 <h2 class="introduction--name">Oluwafemi Tairu</h2>
-                <h2 id="introduction--about">Backend Developer</h2>
-                <p class="introduction--details">---------</p>
+                <!-- <h2 id="introduction--about">Backend Developer</h2> -->
+                <p class="introduction--details">
+                    Human 😄, Software Developer with huge focus on Backend Development <sup>[1] [2]</sup>, Occassional
+                    Speaker and Writer
+                </p>
+                <ol type="1" class="intro--exp">
+                    <li>
+                        <a href="https://careerfoundry.com/en/blog/web-development/whats-the-difference-between-frontend-and-backend/#4-what-is-backend-development"
+                            target="_blank">
+                            What is Backend Development - Career Foundry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end#Back-end_focused" target="_blank">
+                            Backend - Wikipedia
+                        </a>
+                    </li>
+                </ol>
                 <div class="spacer"></div>
-                <a href="mailto:tairuoluwafemi09@gmail.com" class="introduction--button">Get In Touch</a>
+                <div class="intro--social">
+                    <a href="mailto:tairuoluwafemi09@gmail.com" target="_blank">
+                        <span class="fa fa-envelope"></span>
+                    </a>
+                    <a href="https://github.com/Emmarex" target="_blank">
+                        <span class="fab fa-github"></span>
+                    </a>
+                    <a href="https://stackoverflow.com/users/6474941/oluwafemi-tairu" target="_blank">
+                        <span class="fab fa-stack-overflow"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oluwafemi-tairu/" target="_blank">
+                        <span class="fab fa-linkedin"></span>
+                    </a>
+                    <a href="https://medium.com/@tairuoluwafemi09" target="_blank">
+                        <span class="fab fa-medium"></span>
+                    </a>
+                    <a href="https://dev.to/emmarex" target="_blank">
+                        <span class="fab fa-dev"></span>
+                    </a>
+                    <a href="https://twitter.com/_emmarex_" target="_blank">
+                        <span class="fab fa-twitter"></span>
+                    </a>
+                </div>
             </div>
 
             <!-- About Me -->
@@ -61,7 +99,7 @@
                         </p>
 
                         <p>
-                            Some Technologies i have worked with includes,
+                            Some Technologies I have worked with includes,
                             <div class="technologies">
                                 <ul>
                                     <li>Python / Django / Flask</li>
@@ -87,18 +125,28 @@
 
             <!-- Projects i have worked on -->
             <div class="projects" id="projects">
-                <div class="projects__header">
-                    <h2><span class="text-accent">02. </span> Recent Work </h2>
+                <div id="completed-project">
+                    <div class="projects__header">
+                        <h2><span class="text-accent">02. </span> Personal Projects </h2>
+                    </div>
+                    <div class="recent-projects">
+                        <!-- All Projects will be appended here by Javascript -->
+                    </div>
                 </div>
-                <div class="all-projects">
-                    <!-- All Projects will be appended here by Javascript -->
+                <div id="completed-project">
+                    <div class="projects__header">
+                        <h2><span class="text-accent">03. </span> <strike>Failed</strike>/Un-completed Projects </h2>
+                    </div>
+                    <div class="failed-projects">
+                        <!-- All Projects will be appended here by Javascript -->
+                    </div>
                 </div>
             </div>
 
             <!-- Contact Me -->
             <div class="contact" id="contact">
                 <div class="contact__header">
-                    <h2><span class="text-accent">03. </span> Get In Touch </h2>
+                    <h2><span class="text-accent">04. </span> Get In Touch </h2>
                 </div>
 
                 <div class="contact__details">
@@ -110,6 +158,9 @@
                     </div>
 
                     <div class="social-links">
+                        <a href="mailto:tairuoluwafemi09@gmail.com" target="_blank">
+                            <span class="fa fa-envelope"></span>
+                        </a>
                         <a href="https://github.com/Emmarex" target="_blank">
                             <span class="fab fa-github"></span>
                         </a>
@@ -141,19 +192,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
         integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-
-    <script>
-        var text = document.getElementById('introduction--about');
-        var typewriter = new Typewriter(text, {
-            loop: true
-        });
-        typewriter.typeString('Backend Developer')
-            .pauseFor(150)
-            .deleteAll()
-            .typeString('Occassional Blogger and Speaker')
-            .start();
-    </script>
 
     <script src="assets/js/main.js"></script>
 </body>
