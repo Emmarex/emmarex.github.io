@@ -15,6 +15,7 @@ Here are some of the technologies I have worked with or currently work with:
     <li>VueJs</li>
     <li>Flutter</li>
     <li>Ionic Framework</li>
+    <li>C# / Xamarin</li>
     <li>Java</li>
     <li>JQuery</li>
     <li>PHP/Code-Igniter</li>
