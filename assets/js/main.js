@@ -1,5 +1,13 @@
 let recentProjects = [
   {
+    name: "Eazido",
+    description: "Provide your customers with the best support through fully automated conversational chatbots, increase sales, capture more leads and provide the best customer experience - all with no code",
+    technologies: ["Python", "Bash", "Nuxt.js", "Vue", "Tailwind"],
+    github: "https://github.com/Soft-Nexus",
+    preview: "https://www.eazido.com/",
+    article: ""
+  },
+  {
     name: "Dialogflow Fulfillment Python",
     description: "This Library makes creating fulfillment for Dialogflow v2 agents with Django or Flask easy and simple.",
     technologies: ["Python", "", ""],
